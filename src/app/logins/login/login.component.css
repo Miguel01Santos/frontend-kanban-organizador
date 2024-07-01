@@ -1,0 +1,114 @@
+/* Define estilos globais para todos os elementos */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Estiliza o contêiner principal */
+.root {
+    height: 100vh; /* Altura total da viewport */
+    width: 100%; /* Largura total da viewport */
+    display: flex; /* Usa flexbox para posicionamento */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Coluna para organização dos itens */
+    background-color: rgb(52, 49, 49); /* Cor de fundo escura */
+}
+
+/* Estiliza os contêineres de entrar e cadastrar */
+.container-entrar, .container-cadastrar {
+    background-color: rgb(69, 69, 232); /* Cor de fundo azul */
+    height: 70vh; /* Altura específica */
+    width: 25%; /* Largura específica */
+    padding: 20px 0px; /* Espaçamento interno superior e inferior */
+    border-radius: 15px; /* Bordas arredondadas */
+    border-bottom: solid black 8px; /* Borda inferior */
+    border-top: solid black 8px; /* Borda superior */
+    border-right: solid black 2px; /* Borda direita */
+    border-left: solid black 2px; /* Borda esquerda */
+}
+
+/* Estiliza o contêiner interno */
+.container {
+    display: flex; /* Usa flexbox para posicionamento */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Coluna para organização dos itens */
+    justify-content: center; /* Centraliza horizontalmente */
+    height: 55vh; /* Altura específica */
+}
+
+/* Estiliza o formulário dentro do contêiner */
+form {
+    display: flex; /* Usa flexbox para posicionamento */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-around; /* Espaço uniforme entre os elementos */
+    flex-direction: column; /* Coluna para organização dos itens */
+    gap: 7vh; /* Espaçamento entre os elementos */
+    padding-top: 20px; /* Espaçamento superior */
+}
+
+/* Estiliza o título do login */
+.title-login {
+    display: flex; /* Usa flexbox para posicionamento */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Coluna para organização dos itens */
+    color: rgb(255, 255, 255); /* Cor do texto */
+    font-size: 50px; /* Tamanho da fonte */
+    font-family: 'Calibri'; /* Fonte */
+}
+
+/* Estiliza o título do login ao passar o mouse */
+.title-login:hover {
+    cursor: pointer; /* Mostra o cursor como ponteiro */
+    color: rgb(52, 49, 49); /* Muda a cor do texto ao passar o mouse */
+}
+
+/* Estiliza o ícone */
+.icon {
+    margin-top: 30px; /* Espaçamento superior */
+    color: black; /* Cor do ícone */
+    font-size: 50px; /* Tamanho do ícone */
+}
+
+/* Estiliza os inputs dentro do formulário */
+.inputs {
+    display: flex; /* Usa flexbox para posicionamento */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Coluna para organização dos itens */
+    gap: 15px; /* Espaçamento entre os elementos */
+
+    input {
+        padding: 15px 120px 15px 0px; /* Espaçamento interno dos inputs */
+        border-radius: 8px; /* Bordas arredondadas */
+        border: none; /* Sem borda */
+    }
+
+    input:hover {
+        background-color: silver; /* Cor de fundo ao passar o mouse */
+    }
+
+    .label {
+        color: white; /* Cor do texto do label */
+    }
+}
+
+/* Estiliza os botões dentro do formulário */
+.buttons {
+    display: flex; /* Usa flexbox para posicionamento */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 25px; /* Espaçamento entre os botões */
+}
+
+button {
+    padding: 20px 40px; /* Espaçamento interno do botão */
+    border-radius: 8px; /* Bordas arredondadas */
+    border: none; /* Sem borda */
+}
+
+button:hover {
+    background-color: silver; /* Cor de fundo ao passar o mouse */
+    cursor: pointer; /* Mostra o cursor como ponteiro */
+}

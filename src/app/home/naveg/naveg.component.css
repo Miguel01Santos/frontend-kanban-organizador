@@ -1,0 +1,88 @@
+/* Define que todas as tags HTML (*) terão margem e padding zero e usarão box-sizing border-box */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Estilizações gerais para o corpo do documento */
+body {
+    height: 100vh; /* Define a altura do corpo como 100% da altura da viewport */
+}
+
+/* Estilizações para a barra de navegação lateral */
+.menu-lateral {
+    width: 70px; /* Largura inicial da barra lateral */
+    height: 100%; /* Altura da barra lateral */
+    background-color: rgb(49, 49, 232); /* Cor de fundo da barra lateral */
+    padding: 40px 0px 40px 10px; /* Preenchimento interno da barra lateral */
+    display: flex; /* Exibe os elementos em linha */
+    justify-content: space-around; /* Distribui os itens uniformemente ao redor do eixo principal (vertical) */
+    flex-direction: column; /* Orientação dos itens em coluna */
+    border-right: rgb(0, 86, 244) 3px solid; /* Borda direita da barra lateral */
+    overflow: hidden; /* Esconde conteúdo que excede a largura */
+    transition: .3s; /* Transição suave para mudanças de largura */
+}
+
+/* Efeito de expansão da barra lateral ao passar o mouse */
+.menu-lateral:hover {
+    width: 230px; /* Largura expandida ao passar o mouse */
+}
+
+/* Estilizações adicionais para os elementos dentro da barra lateral */
+.elementos {
+    padding-bottom: 61px; /* Preenchimento inferior para os elementos */
+}
+
+/* Estilizações para o botão dentro da barra lateral */
+.btn {
+    width: 100%; /* Largura total do botão */
+    padding-left: 15px; /* Preenchimento à esquerda do botão */
+}
+
+/* Estilizações para o ícone dentro do botão */
+.btn > i {
+    color: silver; /* Cor do ícone */
+    font-size: 24px; /* Tamanho do ícone */
+    cursor: pointer; /* Cursor ao passar o mouse */
+}
+
+/* Estilizações para a lista não ordenada (ul) */
+ul {
+    height: 100%; /* Altura total da lista */
+    list-style-type: none; /* Remove os marcadores de lista */
+}
+
+/* Transição suave ao passar o mouse nos itens do menu */
+.item-menu {
+    transition: .4s; /* Transição suave de 0.4 segundos */
+}
+
+/* Estilizações ao passar o mouse nos itens do menu */
+.item-menu:hover {
+    background-color: rgb(13, 5, 133); /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilizações para o link dentro dos itens do menu */
+.item-menu a {
+    text-decoration: none; /* Remove decoração de texto (sublinhado) */
+    color: silver; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    padding: 20px 4%; /* Preenchimento interno */
+    display: flex; /* Exibe como flexbox */
+    margin-bottom: 20px; /* Margem inferior */
+    align-items: center; /* Alinha itens verticalmente */
+}
+
+/* Estilizações para o texto dentro dos itens do menu */
+.txt {
+    margin-left: 20px; /* Margem à esquerda do texto */
+    font-family: 'calibri'; /* Fonte do texto */
+}
+
+/* Estilizações para o ícone dentro do span com a classe 'icon' */
+.icon i {
+    font-size: 30px; /* Tamanho do ícone */
+    margin-left: 8px; /* Margem à esquerda do ícone */
+}

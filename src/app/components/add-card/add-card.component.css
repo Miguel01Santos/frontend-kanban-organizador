@@ -1,0 +1,120 @@
+.form-tarefas{
+    background-color: rgb(85, 82, 82);
+    padding: 15px;
+    margin-top: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid 5px rgb(85, 82, 82);
+    border-bottom: none;
+
+
+
+    span{
+        font-size: 20px;
+        font-family: 'Calibri';
+        margin-bottom: 6px;
+        color: black;
+    }
+}
+.form-tarefas{
+    border: solid 5px rgb(63, 63, 243);
+    border-bottom: none ;
+}
+
+.add-tarefa{
+    display: flex;
+    flex-direction: row;
+
+    .inputs{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        input{
+            height: 2.5vh;
+        }
+
+        
+    }
+
+    .add{
+        padding: 20px 5px;
+    }
+
+}
+
+
+.dropzone{
+    height: 70vh;
+    background-color: rgb(52, 49, 49);
+    border: solid 5px rgb(63, 63, 243);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: none;
+}
+
+.dropzone:hover{
+    border: solid 5px rgb(63, 63, 243);
+    border-top: none ;
+
+}
+
+table{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title{
+    display: flex;
+    gap: 20px;
+}
+
+.cartão{
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border: solid 2px black;
+    padding: 18px 0 18px 0;
+    margin-bottom: 2px;
+    box-shadow: 2px 2px 20px;
+
+}
+
+.value-kaban{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-family: 'calibre';
+    margin-left: 24px;
+
+    
+}
+
+.remove{
+    color: red;
+    background-color:rgb(52, 49, 49);    
+    border: none;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+/*styles para eventos drag and drop*/
+
+.interacao-column{
+    background-color:rgb(95, 87, 87);  
+}

@@ -1,0 +1,41 @@
+
+<div class="container">
+    <div class="form-tarefas">
+        <span class="adicionar">Adicionar Tarefa</span>
+        <div class="add-tarefa">
+            <div class="inputs">
+                <input type="text" placeholder="Nome da Tarefa" #title>
+                <input type="text" placeholder="Equipe Responsavel" #team>
+            </div>
+            <div>
+                <button class="add" (click)="add(title.value, team.value)">adicionar Card</button>
+            </div> 
+        </div>
+    </div>
+    <div class="dropzone" cdkDropListGroup>
+        <table>
+            <thead class="header" cdkDropList
+            #todoList="cdkDropList"
+            [cdkDropListData]="todo"
+            (cdkDropListDropped)="drop($event)"
+            >
+                <h3>column</h3>
+              <tr class="title">
+                  <th>Título</th>
+                  <th>Equipe</th>
+                  <th>Ações</th>
+              </tr>
+          </thead>
+          <tbody class="cartões">
+              <tr *ngFor="let cards of getList(); index as i"  id="cartão" class="cartão" draggable="true" cdkDrag>
+                <div class="value-kaban">
+                    <td>{{ cards.title }}</td>
+                    <td>{{ cards.team }}</td>  
+                </div>
+                  <td><button class="remove" (click)="remove(i)">X</button></td>
+              </tr>
+        </tbody>
+      </table>    
+    </div >
+        
+</div>

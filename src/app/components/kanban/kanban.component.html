@@ -1,0 +1,19 @@
+<app-header></app-header>
+<body>
+    <app-naveg></app-naveg>
+    <div class="kanban">
+        <button (click)="seecard1()" class="incluir" *ngIf="btn1"> Incluir Coluna</button>
+        <app-add-card *ngIf="card1"></app-add-card>
+        <button (click)="seecard2()" class="incluir" *ngIf="btn2"> Incluir Coluna</button>
+        <app-add-card *ngIf="card2"></app-add-card>
+        <button (click)="seecard3()" class="incluir" *ngIf="btn3"> Incluir Coluna</button>
+        <app-add-card *ngIf="card3"></app-add-card>
+        <button (click)="seecard4()" class="incluir" *ngIf="btn4"> Incluir Coluna</button>
+        <app-add-card *ngIf="card4"></app-add-card>
+        <button (click)="seecard5()" class="incluir" *ngIf="btn5"> Incluir Coluna</button>
+        <app-add-card *ngIf="card5"></app-add-card>
+        <button (click)="seecard6()" class="incluir" *ngIf="btn6"> Incluir Coluna</button>
+        <app-add-card *ngIf="card6"></app-add-card>
+    </div>
+    
+</body>
