@@ -17,7 +17,7 @@
 }
 
 /* Estiliza os contêineres de entrar e cadastrar */
-.container-login {
+.container-cadastro {
     background-color: rgb(56, 56, 69); /* Cor de fundo */
     height: 100vh; /* Altura específica */
     width: 40%; /* Largura específica */
@@ -32,7 +32,7 @@
     flex-direction: column;
 }
 
-.cabeça-login {
+.cabeça-cadastro {
     display: flex; /* Usa flexbox para posicionamento */
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
@@ -91,18 +91,18 @@
     width: 100%;
     gap: 25px; /* Espaçamento entre os elementos */
 
-    .btn-login {
+    .btn-cadastrar {
         height: 6vh;
         width: 50%;
         border-radius: 8px;
         border: none;
-        color: rgb(255, 255, 255);
+        color: #182bd9;
         font-family: 'Calibri';
         font-size: 30px;
-        background-image: linear-gradient(to right, #2e18d9, #18a6d9, #2e18d9, #18a6d9);
+        background-color: rgb(255, 255, 255);
         
     }
-    .btn-login:hover{
+    .btn-cadastrar:hover{
         box-shadow: 1px 1px 20px black;
         cursor: pointer;
         transition: 0.2s;
@@ -115,30 +115,24 @@
     justify-content: center;
     width: 100%;
     margin-top: 50px;
-    gap: 20px;
 
-    .criarconta{
-        font-family: 'Calibri';
-        font-size: 22px;
-        color: rgb(255, 255, 255);
-    }
 
-    .btn-criarconta { 
+    .btn-logarconta { 
         height: 5vh;
-        width: 25%;
+        width: 30%;
         border-radius: 8px;
-        border: solid 1px #18a6d9;
-        color: #18a6d9;
+        border: solid 1px rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
         font-family: 'Calibri';
         font-size: 25px;
         background-color: rgb(56, 56, 69); 
         transition: 0.2s;
     }
 
-    .btn-criarconta:hover {
-        background-color: #18a6d9; 
+    .btn-logarconta:hover {
+        background-color: rgb(255, 255, 255); 
         border: solid 1px rgb(56, 56, 69);
-        color: rgb(56, 56, 69);
+        color: #182bd9;
         cursor: pointer;
     }
 }
@@ -169,3 +163,4 @@
 }
 
 
+         

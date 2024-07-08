@@ -1,27 +1,37 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <div class="root">
-    <div class="container-entrar"><!--ngIF valor true, para tela de entrada ser vizualizada no inicio-->
-        <div class="container">
-            <div class="form">
-                <form>
-                    <div class="title-login">
-                        <span class="entrar">
-                            Fazer Login
-                        </span>
-                        <div class="icon"><i class="bi bi-lock-fill"></i></div>
-                    </div>
-                    <div class="inputs">
-                        <label for="" class="label">Nome de Usuario</label>
-                        <input type="text" placeholder="username">
-                        <label for="" class="label">Senha</label>
-                        <input type="password" placeholder="password">
-                    </div>
-                    <div class="buttons">
-                        <button [routerLink]="'/cadastrar'" routerLinkActive="active">Cadastrar</button>
-                        <button [routerLink]="'/home'" routerLinkActive="active">Entrar</button>
-                    </div>
-                </form>
+    <div class="container-login">
+        <div class="form">
+
+            <div class="cabeça-login">
+                <img src="https://play-lh.googleusercontent.com/7sH1qKJkGg60fV_x3DhowQ9sxBfJS7PafvkU4OMnemOZszvwBr-nj9MuCkemxXvA6vtb" alt="logo-field-control" height="90vh">
+                <span class="entrar">
+                    Kanban Organizador
+                </span>
             </div>
-        </div> 
+            <!--Metodo fazerLogin() utilizado para chamar a validação do usuário.-->
+            <form (submit)="fazerLogin()" class="formulario">
+                <div class="inputs">
+                    <label for="">Faça login na sua conta   </label>
+                    <!--[(ngModel)] direciona o valor digitado nos campos "Nome de Usuário" e "Senha" para a propriedade User (login.component.ts), dentros dos valores name e password-->
+                    <input [(ngModel)]="user.username" type="text" placeholder="Nome de Usuário" name="username">
+                    <input [(ngModel)]="user.password" type="password" placeholder="Senha" name="password">
+                </div>
+                <div class="buttons">
+                    <!--botão submit, que inicia a validação do usuario junto ao banco de dados-->
+                    <button type="submit" class="btn-login">Iniciar Sessão</button>
+                </div>
+                    
+            </form>
+
+            <div class="novo-cadastro">
+                <div><span class="criarconta">Ainda não tem uma conta?  </span></div>
+                <button [routerLink]="'/cadastros'" routerLinkActive="active" class="btn-criarconta">Criar Conta</button>
+            </div>
+        </div>
+        
     </div>
+    <div class="container-apresentacao">
+        <span class="titulo-desafio">Kanban Organizador Field Control</span>
+        <p>Bem-vindo ao Desafio Kanban! Este projeto foi desenvolvido seguindo as melhores práticas de desenvolvimento e organização semântica. Com base nos princípios SOLID, este desafio visa criar uma aplicação Kanban robusta e eficiente. A qualidade do código e a estrutura organizacional são priorizadas, proporcionando um ambiente onde a excelência técnica pode realmente se destacar. Estou ansioso para compartilhar essa jornada com você!</p>
+    </div> 
 </div>

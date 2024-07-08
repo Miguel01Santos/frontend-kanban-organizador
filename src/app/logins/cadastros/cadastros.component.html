@@ -1,0 +1,35 @@
+<div class="root">
+    <div class="container-cadastro">
+        <div class="form">
+            <div class="cabeça-cadastro">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTblsTqU2leUa7iWFbWDlJIZBmhyRGns3Wk6g&s" alt="logo-field-control" height="90vh">
+                <span class="sejunteanos">
+                    Se Junte a Nós !
+                </span>
+            </div>
+            <!--Metodo fazerLogin() utilizado para chamar a validação do usuário.-->
+            <form (submit)="cadastrarUsuario()" class="formulario">
+                <div class="inputs">
+                    <label for="">Faça seu cadastro de forma simples   </label>
+                    <!--[(ngModel)] direciona o valor digitado nos campos "Nome de Usuário" e "Senha" para a propriedade User (login.component.ts), dentros dos valores name e password-->
+                    <input [(ngModel)]="newuser.newusername"  type="text" placeholder="Nome de Usuário" name="username">
+                    <input [(ngModel)]="newuser.newpassword" type="password" placeholder="Senha" name="password">
+                </div>
+                <div class="buttons">
+                    <!--botão submit, que inicia a validação do usuario junto ao banco de dados-->
+                    <button type="submit" class="btn-cadastrar">Cadastrar-se</button>
+                </div>
+            </form>
+            <div class="novo-cadastro">
+                <button [routerLink]="'/'" routerLinkActive="active" class="btn-logarconta">Logar na minha conta</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-apresentacao">
+        <span class="titulo-desafio">Mas afinal, o que é SOLID?</span>
+        <p>
+            O SOLID é um conjunto de cinco princípios fundamentais da programação orientada a objetos, projetados para tornar o código mais compreensível, flexível e fácil de manter. Os principais princípios que compõem o SOLID são: <br><br>
+           Single Responsibility Principle (SRP) - Princípio da Responsabilidade Única <br> Open/Closed Principle (OCP) - Princípio Aberto/Fechado <br>Liskov Substitution Principle (LSP) - Princípio da Substituição de Liskov <br>Interface Segregation Principle (ISP) - Princípio da Segregação de Interfaces <br>Dependency Inversion Principle (DIP) - Princípio da Inversão de Dependência
+            </p>
+    </div> 
+</div>
