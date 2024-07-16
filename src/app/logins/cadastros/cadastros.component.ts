@@ -20,10 +20,10 @@ export class CadastrosComponent {
   ngOnInit(): void{}
 
   cadastrarUsuario(): void{
-    
 
-    console.log("Novo usuario cadastrado",this.newuser)
+    console.log('Tentativa de cadastro',this.newuser)
     // Chama o método cadastroUsuario do serviço cadastroService, passando o objeto user como argumento.
     this.cadastroService.cadastrarUsuario(this.newuser)
+
   }
 }

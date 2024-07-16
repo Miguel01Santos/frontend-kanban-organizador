@@ -20,7 +20,7 @@ export class LoginComponent {
 
   ngOnInit(): void{}
 
-  fazerLogin(): void{
+  fazerLogin(usuario : Usuario ): void{
     console.log(this.user)
     // Chama o método fazerlogin do serviço loginService, passando o objeto user como argumento.
     this.loginService.fazerlogin(this.user)

@@ -9,7 +9,7 @@
                 </span>
             </div>
             <!--Metodo fazerLogin() utilizado para chamar a validação do usuário.-->
-            <form (submit)="fazerLogin()" class="formulario">
+            <form (submit)="fazerLogin(user)" class="formulario">
                 <div class="inputs">
                     <label for="">Faça login na sua conta   </label>
                     <!--[(ngModel)] direciona o valor digitado nos campos "Nome de Usuário" e "Senha" para a propriedade User (login.component.ts), dentros dos valores name e password-->
